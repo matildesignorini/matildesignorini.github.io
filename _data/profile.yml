@@ -22,21 +22,21 @@ links:
 
 # ---- Research interests ----
 # Each topic has a colour (see the palette in assets/css/style.css:
-# blue, pink, yellow, green, orange). Publications can be tagged with
+# green, purple, orange). Publications can be tagged with
 # these same topic names to be grouped and coloured on the site.
 interests:
   - topic: Topic one
-    color: blue
+    color: green
     text: >-
       A few lines describing this line of research — the question, the
       method, why it matters.
   - topic: Topic two
-    color: yellow
+    color: purple
     text: >-
       A few lines describing this line of research — the question, the
       method, why it matters.
   - topic: Topic three
-    color: green
+    color: orange
     text: >-
       A few lines describing this line of research — the question, the
       method, why it matters.
