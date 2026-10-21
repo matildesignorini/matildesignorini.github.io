@@ -1,0 +1,23 @@
+# Invited talks, newest first.
+#   slides:    put the file in /files/slides/ and write its path here
+#              (PDF is best: it opens in any browser; .pptx also works,
+#              but visitors have to download it)
+#   recording: link to the video, if there is one
+
+- title: Placeholder title of an invited talk
+  event: Name of the conference or seminar series
+  place: Institute, City
+  date: 2026-05-14
+  slides: /files/slides/example-talk.pdf
+  recording: https://www.youtube.com/
+
+- title: Another invited seminar
+  event: Departmental colloquium
+  place: University, City
+  date: 2025-11-02
+  slides: /files/slides/example-talk.pdf
+
+- title: A talk with no slides online
+  event: Workshop name
+  place: City
+  date: 2024-06-20

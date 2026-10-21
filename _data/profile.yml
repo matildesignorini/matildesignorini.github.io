@@ -1,0 +1,53 @@
+# ---- About you (top of the page) ----
+name: Matilde Signorini
+role: Your position · Department
+affiliation: University name, City
+photo: /images/profile.svg        # replace with e.g. /images/profile.jpg
+
+# Short bio. Markdown works: *italics*, **bold**, [links](https://...)
+bio: >-
+  Two or three sentences about who you are and what you work on. This is
+  placeholder text so you can see how a short paragraph sits next to the
+  photo. Keep it to roughly this length.
+
+links:
+  - label: Google Scholar
+    url: https://scholar.google.com/
+  - label: ADS
+    url: https://ui.adsabs.harvard.edu/
+  - label: ORCID
+    url: https://orcid.org/
+  - label: LinkedIn
+    url: https://www.linkedin.com/
+
+# ---- Research interests ----
+# Each topic has a colour (see the palette in assets/css/style.css:
+# blue, pink, yellow, green, orange). Publications can be tagged with
+# these same topic names to be grouped and coloured on the site.
+interests:
+  - topic: Topic one
+    color: blue
+    text: >-
+      A few lines describing this line of research — the question, the
+      method, why it matters.
+  - topic: Topic two
+    color: yellow
+    text: >-
+      A few lines describing this line of research — the question, the
+      method, why it matters.
+  - topic: Topic three
+    color: green
+    text: >-
+      A few lines describing this line of research — the question, the
+      method, why it matters.
+
+# ---- CV ----
+cv_file: /files/cv.pdf
+cv_updated: October 2026
+
+# ---- Contact ----
+email: name@university.edu
+address: |
+  Department, Room 000
+  University name
+  Street 1, 0000 AB City

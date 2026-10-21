@@ -1,0 +1,13 @@
+# Outreach activities, newest first.
+#   links: any number of buttons, each with a label and a url
+
+- title: Title of your outreach talk
+  date: 2026-02-10
+  where: Venue, City
+  text: >-
+    One or two sentences about the talk and who it was for.
+  links:
+    - label: Watch on YouTube
+      url: https://www.youtube.com/
+    - label: Teaching the Universe material
+      url: https://example.org/

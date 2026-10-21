@@ -1,0 +1,169 @@
+---
+layout: default
+---
+{%- assign p = site.data.profile -%}
+
+<header class="topbar">
+ <div class="topbar-inner">
+  <a class="topbar-name" href="#top">{{ p.name }}</a>
+  <nav aria-label="Sections">
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#cv">CV</a>
+    <a href="#talks">Talks</a>
+    <a href="#outreach">Outreach</a>
+    <a href="#contact">Contact</a>
+  </nav>
+ </div>
+</header>
+
+<main id="top">
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="intro">
+    <figure class="portrait">
+      <img src="{{ p.photo | relative_url }}" alt="Portrait of {{ p.name }}">
+    </figure>
+    <div class="intro-text">
+      <h1>{{ p.name }}</h1>
+      <p class="role">{{ p.role }}<br>{{ p.affiliation }}</p>
+      <div class="bio">{{ p.bio | markdownify }}</div>
+      <ul class="profile-links">
+        {%- for l in p.links %}
+        <li><a href="{{ l.url }}">{{ l.label }}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== RESEARCH ===================== -->
+  <section id="research">
+    <h2>Research interests</h2>
+    <ul class="interests">
+      {%- for i in p.interests %}
+      <li class="interest c-{{ i.color }}">
+        <h3>{{ i.topic }}</h3>
+        <div>{{ i.text | markdownify }}</div>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <!-- ===================== PUBLICATIONS ===================== -->
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <div class="pub-controls" hidden>
+      <div class="seg" role="group" aria-label="Show">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="first" aria-pressed="false">First author</button>
+        <button type="button" data-filter="co" aria-pressed="false">Co-author</button>
+      </div>
+      <div class="seg" role="group" aria-label="Order">
+        <button type="button" data-sort="date" aria-pressed="true">By date</button>
+        <button type="button" data-sort="topic" aria-pressed="false">By topic</button>
+      </div>
+      <span class="pub-count" aria-live="polite"></span>
+    </div>
+
+    {%- assign pubs = site.data.publications | sort: "year" | reverse %}
+    <div class="pub-box">
+      <ol class="pubs">
+        {%- for pub in pubs %}
+        {%- assign first = false -%}
+        {%- if pub.authors[0] == site.me %}{% assign first = true %}{% endif -%}
+        <li class="pub" data-year="{{ pub.year }}" data-month="{{ pub.month | default: 0 }}" data-first="{{ first }}" data-topics="{{ pub.topics | join: '|' }}">
+          <span class="pub-year">{{ pub.year }}</span>
+          <div class="pub-body">
+            <p class="pub-title">{% if pub.ads %}<a href="{{ pub.ads }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</p>
+            <p class="pub-authors">
+              {%- for a in pub.authors -%}
+                {%- if a == site.me %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}; {% endunless -%}
+              {%- endfor -%}
+            </p>
+            <p class="pub-meta">
+              <span class="journal">{{ pub.journal }}</span>
+              {%- for t in pub.topics %}
+                {%- assign col = "ink" -%}
+                {%- for i in p.interests %}{% if i.topic == t %}{% assign col = i.color %}{% endif %}{% endfor %}
+                <span class="chip c-{{ col }}">{{ t }}</span>
+              {%- endfor %}
+              {%- if pub.ads %} <a class="tag-link" href="{{ pub.ads }}">ADS</a>{% endif %}
+              {%- if pub.arxiv %} <a class="tag-link" href="{{ pub.arxiv }}">arXiv</a>{% endif %}
+              {%- if pub.doi %} <a class="tag-link" href="{{ pub.doi }}">DOI</a>{% endif %}
+              {%- if pub.pdf %} <a class="tag-link" href="{{ pub.pdf | relative_url }}">PDF</a>{% endif %}
+            </p>
+          </div>
+        </li>
+        {%- endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== CV ===================== -->
+  <section id="cv" class="cv">
+    <h2>Curriculum vitae</h2>
+    <div class="cv-row">
+      <p>The full CV, with education, positions, grants and service.</p>
+      <a class="button" href="{{ p.cv_file | relative_url }}" download>Download CV <span class="small">PDF · {{ p.cv_updated }}</span></a>
+    </div>
+  </section>
+
+  <!-- ===================== TALKS ===================== -->
+  <section id="talks">
+    <h2>Invited talks</h2>
+    <ul class="entries">
+      {%- for t in site.data.talks %}
+      <li>
+        <time datetime="{{ t.date }}">{{ t.date | date: "%b %Y" }}</time>
+        <div>
+          <p class="entry-title">{{ t.title }}</p>
+          <p class="entry-meta">{{ t.event }}{% if t.place %}, {{ t.place }}{% endif %}</p>
+          {%- if t.slides or t.recording %}
+          <p class="entry-links">
+            {%- if t.slides %}<a class="slides" href="{{ t.slides | relative_url }}">Slides</a>{% endif %}
+            {%- if t.recording %}<a class="video" href="{{ t.recording }}">Recording</a>{% endif %}
+          </p>
+          {%- endif %}
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <!-- ===================== OUTREACH ===================== -->
+  <section id="outreach">
+    <h2>Outreach</h2>
+    <ul class="entries">
+      {%- for o in site.data.outreach %}
+      <li>
+        <time datetime="{{ o.date }}">{{ o.date | date: "%b %Y" }}</time>
+        <div>
+          <p class="entry-title">{{ o.title }}</p>
+          {%- if o.where %}<p class="entry-meta">{{ o.where }}</p>{% endif %}
+          {%- if o.text %}<div class="entry-text">{{ o.text | markdownify }}</div>{% endif %}
+          {%- if o.links %}
+          <p class="entry-links">
+            {%- for l in o.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+          </p>
+          {%- endif %}
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <div class="contact-grid">
+      <p><a class="email" href="mailto:{{ p.email }}">{{ p.email }}</a></p>
+      <address>{{ p.address | newline_to_br }}</address>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© {{ site.time | date: "%Y" }} {{ p.name }}</p>
+</footer>
