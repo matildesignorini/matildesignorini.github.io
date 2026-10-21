@@ -9,10 +9,13 @@
   --muted:   #4a5a70;   /* secondary text */
   --rule:    #c9d7e4;   /* thin lines */
 
-  /* the three highlight colours: soft for fills, deep for text */
+  /* the highlight colours: soft for fills, deep for text */
   --green:   #8dbf9a;  --green-deep:  #2f6d48;
   --purple:  #b0a2d8;  --purple-deep: #5a4a8e;
   --orange:  #eeac7d;  --orange-deep: #a55a24;
+  --blue:    #8fb4dd;  --blue-deep:   #2f5f92;
+  --rose:    #e3a1b4;  --rose-deep:   #9a3f5c;
+  --ochre:   #d9c06e;  --ochre-deep:  #7d6510;
   --on-fill: #0e1d33;   /* text placed on a coloured fill */
 
   --link:    var(--purple-deep);
@@ -28,6 +31,7 @@
     --green: #74a883; --green-deep: #93d1a6;
     --purple: #9586c4; --purple-deep: #bdb0ef;
     --orange: #d89464; --orange-deep: #f2b088;
+    --blue: #6f97c4; --blue-deep: #9cc4f0; --rose: #c9849a; --rose-deep: #f0a9c0; --ochre: #bba458; --ochre-deep: #e3cd7a;
     --mark: #6a4428;
     color-scheme: dark;
   }
@@ -37,6 +41,7 @@
   --green: #74a883; --green-deep: #93d1a6;
   --purple: #9586c4; --purple-deep: #bdb0ef;
   --orange: #d89464; --orange-deep: #f2b088;
+    --blue: #6f97c4; --blue-deep: #9cc4f0; --rose: #c9849a; --rose-deep: #f0a9c0; --ochre: #bba458; --ochre-deep: #e3cd7a;
   --mark: #6a4428;
   color-scheme: dark;
 }
@@ -45,6 +50,9 @@
 .c-green  { --c: var(--green); }
 .c-purple { --c: var(--purple); }
 .c-orange { --c: var(--orange); }
+.c-blue   { --c: var(--blue); }
+.c-rose   { --c: var(--rose); }
+.c-ochre  { --c: var(--ochre); }
 .c-ink    { --c: var(--rule); }
 
 /* ========================= base ========================= */

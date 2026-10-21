@@ -14,7 +14,7 @@
   journal: ApJ
   year: 2026
   month: 3
-  topics: [Topic one]
+  topics: [Disc–corona interaction]
   ads: https://ui.adsabs.harvard.edu/
   arxiv: https://arxiv.org/
 
@@ -23,7 +23,7 @@
   journal: A&A
   year: 2025
   month: 11
-  topics: [Topic two, Topic three]
+  topics: [Cosmology with AGN, Obscured AGN]
   ads: https://ui.adsabs.harvard.edu/
 
 - title: Another first-author paper, this time on topic two
@@ -31,7 +31,7 @@
   journal: MNRAS
   year: 2025
   month: 4
-  topics: [Topic two]
+  topics: [Cosmology with AGN]
   ads: https://ui.adsabs.harvard.edu/
   arxiv: https://arxiv.org/
 
@@ -40,7 +40,7 @@
   journal: Nat. Astron.
   year: 2024
   month: 9
-  topics: [Topic one]
+  topics: [Disc–corona interaction]
   ads: https://ui.adsabs.harvard.edu/
 
 - title: An earlier first-author paper from your PhD
@@ -48,7 +48,7 @@
   journal: ApJ
   year: 2023
   month: 6
-  topics: [Topic three]
+  topics: [Obscured AGN]
   ads: https://ui.adsabs.harvard.edu/
 
 - title: A co-authored paper on topic one with a short title
@@ -56,7 +56,7 @@
   journal: A&A
   year: 2022
   month: 2
-  topics: [Topic one]
+  topics: [Disc–corona interaction]
   ads: https://ui.adsabs.harvard.edu/
 
 - title: Placeholder title of a paper that's currently under review
@@ -64,5 +64,5 @@
   journal: Submitted
   year: 2026
   month: 9
-  topics: [Topic one, Topic two]
+  topics: [Disc–corona interaction, Cosmology with AGN]
   arxiv: https://arxiv.org/

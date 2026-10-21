@@ -6,21 +6,11 @@ photo: /images/profile.svg        # replace with e.g. /images/profile.jpg
 
 # Short bio. Markdown works: *italics*, **bold**, [links](https://...)
 # Leave an empty line between paragraphs.
-bio: |
+bio: >-
   I'm an observational astronomer studying active galactic nuclei (AGN).
   My work is centred on X-rays, and I also analyse UV and infrared data.
-
-  I want to understand how AGN work: in particular, how the X-ray-emitting
-  corona interacts with the accretion disc, and how reverberation mapping
-  can measure supermassive black hole masses and probe the Broad Line
-  Region. I also study the obscured AGN population: how it evolves, how
-  X-ray observations can trace it, and what it tells us about how black
-  holes and their host galaxies grow together.
-
-  Beyond their structure, I'm interested in AGN as cosmological probes.
-  Because they are extremely luminous and found across a wide range of
-  redshifts, they can be used to measure distances and test cosmological
-  models.
+  I want to understand how AGN work: in particular, the interplay between
+  the accretion disc and the X-ray emitting corona.
 
 links:
   - label: Google Scholar
@@ -33,25 +23,45 @@ links:
     url: https://www.linkedin.com/in/matilde-signorini-70b853150/
 
 # ---- Research interests ----
-# Each topic has a colour (see the palette in assets/css/style.css:
-# green, purple, orange). Publications can be tagged with
-# these same topic names to be grouped and coloured on the site.
+# Each topic has a colour: green, blue, purple, orange, rose or ochre
+# (defined in assets/css/style.css). Tag publications with these same
+# topic names to group and colour them on the site.
+# The descriptions are drafts: check and rewrite them in your own words.
 interests:
-  - topic: Topic one
+  - topic: Disc–corona interaction
     color: green
     text: >-
-      A few lines describing this line of research — the question, the
-      method, why it matters.
-  - topic: Topic two
+      How the hot X-ray corona and the accretion disc are coupled, and what
+      the link between their UV and X-ray emission tells us about how
+      supermassive black holes accrete.
+  - topic: Cosmology with AGN
+    color: blue
+    text: >-
+      Using the relation between the UV and X-ray luminosities of quasars
+      to measure distances out to high redshift and test cosmological
+      models.
+  - topic: Obscured AGN
     color: purple
     text: >-
-      A few lines describing this line of research — the question, the
-      method, why it matters.
-  - topic: Topic three
+      How the obscured AGN population evolves over cosmic time, how X-ray
+      observations can find and characterise it, and what it means for the
+      co-evolution of black holes and their host galaxies.
+  - topic: High-redshift AGN
     color: orange
     text: >-
-      A few lines describing this line of research — the question, the
-      method, why it matters.
+      The most distant quasars, and what they reveal about how
+      supermassive black holes formed and grew in the early Universe.
+  - topic: BASS collaboration
+    color: rose
+    text: >-
+      Member of the BAT AGN Spectroscopic Survey, a multiwavelength study
+      of the hard X-ray selected AGN detected by *Swift*/BAT.
+  - topic: STORM2 collaboration
+    color: ochre
+    text: >-
+      Member of AGN STORM 2, an intensive multiwavelength reverberation
+      mapping campaign on the Seyfert galaxy Mrk 817, probing the Broad
+      Line Region and the black hole mass.
 
 # ---- CV ----
 cv_file: /files/cv.pdf
