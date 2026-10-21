@@ -27,7 +27,7 @@ layout: default
     <div class="intro-text">
       <h1>{{ p.name }}</h1>
       <p class="role">{{ p.role }}<br>{{ p.affiliation }}</p>
-      <div class="bio">{{ p.bio | markdownify }}</div>
+      <div class="bio">{{ p.bio | replace: "X-ray", '<span class="nowrap">X-ray</span>' | markdownify }}</div>
       <ul class="profile-links">
         {%- for l in p.links %}
         <li><a href="{{ l.url }}">{{ l.label }}</a></li>
@@ -43,7 +43,7 @@ layout: default
       {%- for i in p.interests %}
       <li class="interest c-{{ i.color }}">
         <h3>{{ i.topic }}</h3>
-        <div>{{ i.text | markdownify }}</div>
+        <div>{{ i.text | replace: "X-ray", '<span class="nowrap">X-ray</span>' | markdownify }}</div>
       </li>
       {%- endfor %}
     </ul>

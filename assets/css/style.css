@@ -101,7 +101,7 @@ body::before {
 
 /* ========================= intro ========================= */
 .intro {
-  display: grid; grid-template-columns: 12rem minmax(0, 1fr); gap: 2.5rem; align-items: start;
+  display: grid; grid-template-columns: 14rem minmax(0, 1fr); gap: 2.25rem; align-items: start;
   padding-top: 3.5rem;
 }
 .portrait { margin: 0; position: relative; isolation: isolate; max-width: 100%; }
@@ -110,7 +110,7 @@ body::before {
   background: var(--deep); border-radius: 50%; z-index: -1;
 }
 .portrait img { display: block; width: 100%; max-width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 50%; }
-.intro h1 { font-size: clamp(2.3rem, 6vw, 3.3rem); font-weight: 800; font-stretch: 115%; letter-spacing: -.015em; line-height: 1; }
+.intro h1 { font-size: clamp(2.2rem, 5.6vw, 2.9rem); font-weight: 800; font-stretch: 115%; letter-spacing: -.015em; line-height: 1; }
 .role { font: 500 1rem/1.45 var(--font); color: var(--muted); margin: .7rem 0 1.1rem; }
 .bio p { margin-bottom: 1rem; }
 .profile-links { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
@@ -121,7 +121,7 @@ body::before {
 .profile-links a:hover { background: var(--ink); color: var(--bg); }
 @media (max-width: 640px) {
   .intro { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
-  .portrait { width: 10rem; }
+  .portrait { width: 12rem; }
 }
 
 /* ========================= research ========================= */
@@ -215,3 +215,4 @@ body::before {
 .email { font: 700 1.2rem var(--font); overflow-wrap: anywhere; }
 address { font-style: normal; color: var(--muted); }
 .footer { text-align: center; color: var(--muted); font: 400 .8rem var(--font); padding: 2rem 16px 3rem; }
+.nowrap { white-space: nowrap; }
