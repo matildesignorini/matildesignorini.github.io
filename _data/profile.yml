@@ -23,13 +23,13 @@ links:
     url: https://www.linkedin.com/in/matilde-signorini-70b853150/
 
 # ---- Research interests ----
-# Each topic has a colour: green, blue, purple, orange, rose or ochre
+# Each topic has a colour: yellow, ochre, blue, sky, green or orange
 # (defined in assets/css/style.css). Tag publications with these same
 # topic names to group and colour them on the site.
 # The descriptions are drafts: check and rewrite them in your own words.
 interests:
   - topic: Disc–corona interaction
-    color: green
+    color: yellow
     text: >-
       How the hot X-ray corona and the accretion disc are coupled, and what
       the link between their UV and X-ray emission tells us about how
@@ -41,18 +41,18 @@ interests:
       to measure distances out to high redshift and test cosmological
       models.
   - topic: Obscured AGN
-    color: purple
+    color: green
     text: >-
       How the obscured AGN population evolves over cosmic time, how X-ray
       observations can find and characterise it, and what it means for the
       co-evolution of black holes and their host galaxies.
   - topic: High-redshift AGN
-    color: orange
+    color: sky
     text: >-
       The most distant quasars, and what they reveal about how
       supermassive black holes formed and grew in the early Universe.
   - topic: BASS collaboration
-    color: rose
+    color: orange
     text: >-
       Member of the BAT AGN Spectroscopic Survey, a multiwavelength study
       of the hard X-ray selected AGN detected by *Swift*/BAT.

@@ -3,56 +3,40 @@
    Layout: one narrow reading column, a sticky name bar on top.
    ========================================================= */
 :root {
-  --bg:      #e5eef6;   /* page background: pale light blue */
-  --box:     #f5f9fc;   /* publications box */
-  --ink:     #0e1d33;   /* main text, very dark blue */
-  --muted:   #4a5a70;   /* secondary text */
-  --rule:    #c9d7e4;   /* thin lines */
+  /* Palette taken from Van Gogh's "The Starry Night" (1889).
+     One deliberate night look, the same in light and dark mode. */
+  --bg:      #16224a;   /* page background: the deep night sky */
+  --box:     #1c2b5a;   /* publications box */
+  --ink:     #f3ebcf;   /* main text: the cream of the star halos */
+  --muted:   #a9b7d8;   /* secondary text: pale swirl blue */
+  --rule:    #2f4378;   /* thin lines */
 
-  /* the highlight colours: soft for fills, deep for text */
-  --green:   #8dbf9a;  --green-deep:  #2f6d48;
-  --purple:  #b0a2d8;  --purple-deep: #5a4a8e;
-  --orange:  #eeac7d;  --orange-deep: #a55a24;
-  --blue:    #8fb4dd;  --blue-deep:   #2f5f92;
-  --rose:    #e3a1b4;  --rose-deep:   #9a3f5c;
-  --ochre:   #d9c06e;  --ochre-deep:  #7d6510;
-  --on-fill: #0e1d33;   /* text placed on a coloured fill */
+  /* highlight colours from the painting */
+  --yellow:  #f2cf45;   /* the stars */
+  --ochre:   #e3a43a;   /* the moon */
+  --blue:    #7fa2db;   /* the big swirl */
+  --sky:     #a6d0d8;   /* pale sky near the horizon */
+  --green:   #93b38a;   /* the hills */
+  --orange:  #d9824a;   /* the village windows and roofs */
+  --deep:    #3c5ca6;   /* ultramarine, used for blocks and shadows */
+  --on-fill: #16224a;   /* text placed on a coloured fill */
 
-  --link:    var(--purple-deep);
-  --mark:    #f4cfb2;   /* highlighter behind link underlines */
+  --link:    var(--sky);
+  --mark:    #6a5826;   /* highlighter behind link underlines */
 
   --font: "Archivo", "Helvetica Neue", Arial, sans-serif;
 
   --measure: 44rem;     /* width of the main column */
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0f1a2a; --box: #152338; --ink: #e2eaf4; --muted: #9aaac0; --rule: #26374f;
-    --green: #74a883; --green-deep: #93d1a6;
-    --purple: #9586c4; --purple-deep: #bdb0ef;
-    --orange: #d89464; --orange-deep: #f2b088;
-    --blue: #6f97c4; --blue-deep: #9cc4f0; --rose: #c9849a; --rose-deep: #f0a9c0; --ochre: #bba458; --ochre-deep: #e3cd7a;
-    --mark: #6a4428;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #0f1a2a; --box: #152338; --ink: #e2eaf4; --muted: #9aaac0; --rule: #26374f;
-  --green: #74a883; --green-deep: #93d1a6;
-  --purple: #9586c4; --purple-deep: #bdb0ef;
-  --orange: #d89464; --orange-deep: #f2b088;
-    --blue: #6f97c4; --blue-deep: #9cc4f0; --rose: #c9849a; --rose-deep: #f0a9c0; --ochre: #bba458; --ochre-deep: #e3cd7a;
-  --mark: #6a4428;
   color-scheme: dark;
 }
 
 /* topic colour classes, used by research topics and paper tags */
-.c-green  { --c: var(--green); }
-.c-purple { --c: var(--purple); }
-.c-orange { --c: var(--orange); }
-.c-blue   { --c: var(--blue); }
-.c-rose   { --c: var(--rose); }
+.c-yellow { --c: var(--yellow); }
 .c-ochre  { --c: var(--ochre); }
+.c-blue   { --c: var(--blue); }
+.c-sky    { --c: var(--sky); }
+.c-green  { --c: var(--green); }
+.c-orange { --c: var(--orange); }
 .c-ink    { --c: var(--rule); }
 
 /* ========================= base ========================= */
@@ -73,7 +57,7 @@ a {
   transition: background-size .15s;
 }
 a:hover { background-size: 100% 100%; }
-a:focus-visible, button:focus-visible { outline: 2px solid var(--purple-deep); outline-offset: 2px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--yellow); outline-offset: 2px; }
 p { margin: 0 0 .6em; }
 h1, h2, h3 { font-family: var(--font); line-height: 1.1; margin: 0; text-wrap: balance; }
 
@@ -123,7 +107,7 @@ body::before {
 .portrait { margin: 0; position: relative; isolation: isolate; max-width: 100%; }
 .portrait::before {           /* the offset colour block, like a misregistered riso print */
   content: ""; position: absolute; inset: .7rem -.7rem -.7rem .7rem;
-  background: var(--purple); z-index: -1;
+  background: var(--deep); z-index: -1;
 }
 .portrait img { display: block; width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
 .intro h1 { font-size: clamp(2.3rem, 6vw, 3.3rem); font-weight: 800; font-stretch: 115%; letter-spacing: -.015em; line-height: 1; }
@@ -198,12 +182,12 @@ body::before {
 .cv-row p { margin: 0; color: var(--muted); min-width: 0; }
 .button {
   display: inline-flex; align-items: baseline; gap: .6rem;
-  background: var(--ink); color: var(--bg);
+  background: var(--yellow); color: var(--on-fill);
   font: 700 1rem var(--font); padding: .75rem 1.3rem;
-  box-shadow: 5px 5px 0 var(--orange);
+  box-shadow: 5px 5px 0 var(--deep);
   transition: transform .1s, box-shadow .1s;
 }
-.button:hover { background: var(--ink); color: var(--bg); transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--orange); }
+.button:hover { background: var(--yellow); color: var(--on-fill); transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--deep); }
 .button .small { font-weight: 400; font-size: .8rem; opacity: .9; }
 
 /* ========================= talks & outreach ========================= */
@@ -220,10 +204,10 @@ body::before {
   border: 1.5px solid var(--ink); padding: .2rem .65rem;
 }
 .entry-links a:hover { background: var(--ink); color: var(--bg); }
-.entry-links a.slides  { border-color: var(--purple-deep); color: var(--purple-deep); }
-.entry-links a.video   { border-color: var(--orange-deep); color: var(--orange-deep); }
-.entry-links a.slides:hover { background: var(--purple); border-color: var(--purple); color: var(--on-fill); }
-.entry-links a.video:hover  { background: var(--orange); border-color: var(--orange); color: var(--on-fill); }
+.entry-links a.slides  { border-color: var(--yellow); color: var(--yellow); }
+.entry-links a.video   { border-color: var(--sky); color: var(--sky); }
+.entry-links a.slides:hover { background: var(--yellow); color: var(--on-fill); }
+.entry-links a.video:hover  { background: var(--sky); color: var(--on-fill); }
 @media (max-width: 520px) { .entries li { grid-template-columns: minmax(0, 1fr); gap: .2rem; } }
 
 /* ========================= contact & footer ========================= */
