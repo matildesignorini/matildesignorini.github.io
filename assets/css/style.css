@@ -105,11 +105,11 @@ body::before {
   padding-top: 3.5rem;
 }
 .portrait { margin: 0; position: relative; isolation: isolate; max-width: 100%; }
-.portrait::before {           /* the offset colour block, like a misregistered riso print */
-  content: ""; position: absolute; inset: .7rem -.7rem -.7rem .7rem;
-  background: var(--deep); z-index: -1;
+.portrait::before {           /* the offset colour disc behind the photo */
+  content: ""; position: absolute; inset: .6rem -.6rem -.6rem .6rem;
+  background: var(--deep); border-radius: 50%; z-index: -1;
 }
-.portrait img { display: block; width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.portrait img { display: block; width: 100%; max-width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 50%; }
 .intro h1 { font-size: clamp(2.3rem, 6vw, 3.3rem); font-weight: 800; font-stretch: 115%; letter-spacing: -.015em; line-height: 1; }
 .role { font: 500 1rem/1.45 var(--font); color: var(--muted); margin: .7rem 0 1.1rem; }
 .bio p { margin-bottom: 1rem; }
