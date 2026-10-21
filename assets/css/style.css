@@ -3,17 +3,17 @@
    Layout: one narrow reading column, a sticky name bar on top.
    ========================================================= */
 :root {
-  --bg:      #eef0f6;   /* page background: a very pale dark-blue tint */
-  --box:     #f8f9fc;   /* publications box */
-  --ink:     #1c2140;   /* main text, dark blue */
-  --muted:   #575d7a;   /* secondary text */
-  --rule:    #d3d7e5;   /* thin lines */
+  --bg:      #e5eef6;   /* page background: pale light blue */
+  --box:     #f5f9fc;   /* publications box */
+  --ink:     #0e1d33;   /* main text, very dark blue */
+  --muted:   #4a5a70;   /* secondary text */
+  --rule:    #c9d7e4;   /* thin lines */
 
   /* the three highlight colours: soft for fills, deep for text */
   --green:   #8dbf9a;  --green-deep:  #2f6d48;
   --purple:  #b0a2d8;  --purple-deep: #5a4a8e;
   --orange:  #eeac7d;  --orange-deep: #a55a24;
-  --on-fill: #1c2140;   /* text placed on a coloured fill */
+  --on-fill: #0e1d33;   /* text placed on a coloured fill */
 
   --link:    var(--purple-deep);
   --mark:    #f4cfb2;   /* highlighter behind link underlines */
@@ -24,7 +24,7 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #151a2e; --box: #1c2239; --ink: #e5e7f1; --muted: #a2a7c2; --rule: #2e3552;
+    --bg: #0f1a2a; --box: #152338; --ink: #e2eaf4; --muted: #9aaac0; --rule: #26374f;
     --green: #74a883; --green-deep: #93d1a6;
     --purple: #9586c4; --purple-deep: #bdb0ef;
     --orange: #d89464; --orange-deep: #f2b088;
@@ -33,7 +33,7 @@
   }
 }
 :root[data-theme="dark"] {
-  --bg: #151a2e; --box: #1c2239; --ink: #e5e7f1; --muted: #a2a7c2; --rule: #2e3552;
+  --bg: #0f1a2a; --box: #152338; --ink: #e2eaf4; --muted: #9aaac0; --rule: #26374f;
   --green: #74a883; --green-deep: #93d1a6;
   --purple: #9586c4; --purple-deep: #bdb0ef;
   --orange: #d89464; --orange-deep: #f2b088;
