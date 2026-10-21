@@ -21,6 +21,70 @@ layout: default
 
   <!-- ===================== ABOUT ===================== -->
   <section class="intro">
+
+    <!-- Little space doodles behind the intro. Each one is placed with
+         --x / --y (wide screens), --cx / --cy or --cb (narrower screens),
+         --s (size) and --r (rotation). Class "c" = also shown on narrow
+         screens, "s" = only shown on phones. -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <symbol id="i-telescope" viewBox="0 0 48 48">
+        <g transform="rotate(-28 22 18)">
+          <rect x="7" y="13" width="27" height="9" rx="1.5" class="f-purple"/>
+          <rect x="34" y="14.5" width="5" height="6" rx="1"/>
+          <rect x="3" y="15" width="4" height="5" rx="1"/>
+        </g>
+        <path d="M23 25 L15 44 M23 25 L31 44 M23 25 V44"/>
+      </symbol>
+      <symbol id="i-agn" viewBox="0 0 48 48">
+        <path d="M24 21.5 L20.5 1 L27.5 1 Z M24 26.5 L20.5 47 L27.5 47 Z" class="f-orange"/>
+        <ellipse cx="24" cy="24" rx="22" ry="6.5" class="f-green"/>
+        <ellipse cx="24" cy="24" rx="13" ry="3.6"/>
+        <circle cx="24" cy="24" r="2.8" class="f-ink"/>
+      </symbol>
+      <symbol id="i-galaxy" viewBox="0 0 48 48">
+        <path d="M24 24 c0-4 6-5.5 8.5-1.5 s-.5 10-8.5 10.5 s-12-5-10-13 s10-10.5 18-7"/>
+        <path d="M24 24 c0 4-6 5.5-8.5 1.5 s.5-10 8.5-10.5 s12 5 10 13 s-10 10.5-18 7"/>
+        <circle cx="24" cy="24" r="2.6" class="f-orange"/>
+      </symbol>
+      <symbol id="i-planet" viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="9.5" class="f-green"/>
+        <path d="M14.6 21.2 C4 18 2 22.5 6 26 S26 34 38 31.5 S46 25 33.4 21.2"/>
+      </symbol>
+      <symbol id="i-dish" viewBox="0 0 48 48">
+        <path d="M8 10 Q10 32 32 34 Z" class="f-purple"/>
+        <path d="M20 22 L30 12 M30 12 m-2 0 a2 2 0 1 0 4 0 a2 2 0 1 0 -4 0 M20 28 L24 44 M16 44 H32"/>
+      </symbol>
+      <symbol id="i-comet" viewBox="0 0 48 48">
+        <path d="M30 18 L4 6 M28 22 L2 18 M29 26 L8 30"/>
+        <circle cx="34" cy="22" r="6" class="f-orange"/>
+      </symbol>
+      <symbol id="i-star" viewBox="0 0 48 48">
+        <path d="M24 3 Q26.5 21.5 45 24 Q26.5 26.5 24 45 Q21.5 26.5 3 24 Q21.5 21.5 24 3 Z" class="f-purple"/>
+      </symbol>
+      <symbol id="i-dot" viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="10" class="f-ink"/>
+      </symbol>
+    </svg>
+    <div class="sky" aria-hidden="true">
+      <svg class="ic"     style="--x:6%;  --y:4.5rem; --s:64px; --r:-8deg"><use href="#i-telescope"/></svg>
+      <svg class="ic s"   style="--x:6%;  --y:4.5rem; --cx:66%; --cy:9.5rem; --s:64px; --r:-8deg"><use href="#i-telescope"/></svg>
+      <svg class="ic"     style="--x:86%; --y:2.5rem; --s:72px; --r:14deg"><use href="#i-agn"/></svg>
+      <svg class="ic s"   style="--x:86%; --y:2.5rem; --cx:74%; --cy:4rem;   --s:60px; --r:14deg"><use href="#i-agn"/></svg>
+      <svg class="ic"     style="--x:13%; --y:14rem;  --s:58px; --r:20deg"><use href="#i-galaxy"/></svg>
+      <svg class="ic c"   style="--x:80%; --y:14.5rem; --cx:50%; --cy:.3rem; --cs:42px; --s:60px; --r:-14deg"><use href="#i-planet"/></svg>
+      <svg class="ic"     style="--x:3%;  --y:22rem;  --s:46px; --r:6deg"><use href="#i-dish"/></svg>
+      <svg class="ic c"   style="--x:58%; --y:21.5rem; --cx:84%; --cb:.3rem; --s:40px; --r:-18deg"><use href="#i-comet"/></svg>
+      <svg class="ic c tw" style="--x:11%; --y:1.5rem; --cx:7%;  --cy:.9rem; --s:18px"><use href="#i-star"/></svg>
+      <svg class="ic tw"  style="--x:93%; --y:11rem;  --s:14px; --d:1.3s"><use href="#i-star"/></svg>
+      <svg class="ic c tw" style="--x:64%; --y:.6rem; --cx:90%; --cy:1.6rem; --s:13px; --d:2.1s"><use href="#i-star"/></svg>
+      <svg class="ic tw"  style="--x:24%; --y:21rem;  --s:12px; --d:.7s"><use href="#i-star"/></svg>
+      <svg class="ic"     style="--x:20%; --y:8rem;   --s:6px"><use href="#i-dot"/></svg>
+      <svg class="ic c"   style="--x:96%; --y:19rem;  --cx:36%; --cy:1.2rem; --s:5px"><use href="#i-dot"/></svg>
+      <svg class="ic c"   style="--x:45%; --y:21.5rem; --cx:22%; --cb:1rem; --s:6px"><use href="#i-dot"/></svg>
+      <svg class="ic"     style="--x:83%; --y:8rem;   --s:5px"><use href="#i-dot"/></svg>
+      <svg class="ic"     style="--x:8%;  --y:11rem;  --s:4px"><use href="#i-dot"/></svg>
+    </div>
+
     <figure class="portrait">
       <img src="{{ p.photo | relative_url }}" alt="Portrait of {{ p.name }}">
     </figure>
