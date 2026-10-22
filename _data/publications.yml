@@ -1,68 +1,538 @@
-# One entry per paper. Order doesn't matter — the site sorts them.
+# Generated from an ADS BibTeX export. Order doesn't matter: the site sorts.
 #
-#   title:    paper title
-#   authors:  list of authors, written the way they appear in the paper.
-#             Write your own name exactly as `me:` in _config.yml so it's
-#             shown in bold and first-author papers are detected.
-#   journal:  journal name (or "Submitted", "In prep.")
-#   year / month: numbers
-#   topics:   one or more topic names from _data/profile.yml
-#   ads / arxiv / doi / pdf: links (leave out the ones you don't have)
+#   authors:   the first authors, then "…" and you if you're further down.
+#   et_al:     true adds "et al." after the names shown.
+#   n_authors: total number of authors, shown when the list is shortened.
+#   topics:    one or more topic names from _data/profile.yml.
+#              A topic that isn't in profile.yml shows up grey, at the end.
 
-- title: Placeholder title of a first-author paper about topic one
-  authors: ["Signorini, M.", "Coauthor, A.", "Coauthor, B."]
-  journal: ApJ
+- title: "Supermassive black holes and nuclear star clusters in galaxies: Constraining formation and co-evolution with SHARP and MICADO"
+  authors: ["Dalla Bontà, E.", "Portaluri, E.", "Arcidiacono, C.", "…", "Signorini, M."]
+  n_authors: "10"
+  journal: "New Astron."
+  year: 2026
+  month: 11
+  topics: ["Other"]
+  ads: https://ui.adsabs.harvard.edu/abs/2026NewA..12802613D
+  doi: https://doi.org/10.1016/j.newast.2026.102613
+  bibcode: 2026NewA..12802613D
+
+- title: "Precision near-IR spectroscopy for understanding AGN physics and shed light on the H₀ tension"
+  authors: ["Signorini, M.", "Bennert, V. N.", "Dalla Bontà, E."]
+  et_al: true
+  n_authors: "6"
+  journal: "New Astron."
+  year: 2026
+  month: 11
+  topics: ["Cosmology with AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2026NewA..12802592S
+  arxiv: https://arxiv.org/abs/2607.00209
+  doi: https://doi.org/10.1016/j.newast.2026.102592
+  bibcode: 2026NewA..12802592S
+
+- title: "Fooled by mass? Recovering the Γ–λ<sub>Edd</sub> relation of quasars from their X-ray variability"
+  authors: ["Signorini, M.", "Sacchi, A.", "Trefoloni, B."]
+  et_al: true
+  n_authors: "10"
+  journal: "arXiv preprint"
+  year: 2026
+  month: 9
+  topics: ["Disc–corona interaction"]
+  ads: https://ui.adsabs.harvard.edu/abs/2026arXiv260937607S
+  arxiv: https://arxiv.org/abs/2609.37607
+  doi: https://doi.org/10.48550/arXiv.2609.37607
+  bibcode: 2026arXiv260937607S
+
+- title: "Radio selection of heavily obscured AGN in the J1030 field: Unraveling a missing Compton-thick population"
+  authors: ["Mazzolari, G.", "Gilli, R.", "Mignoli, M.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "24"
+  journal: "A&A"
+  year: 2026
+  month: 9
+  topics: ["Obscured AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2026A&A...713A.139M
+  arxiv: https://arxiv.org/abs/2603.10176
+  doi: https://doi.org/10.1051/0004-6361/202554915
+  bibcode: 2026A&A...713A.139M
+
+- title: "Observation of a Solar-like Magnetic Reconnection Event in an AGN Corona with XRISM"
+  authors: ["Vardi, G.", "Behar, E.", "Gu, L.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "17"
+  journal: "ApJL"
+  year: 2026
+  month: 8
+  topics: ["Disc–corona interaction"]
+  ads: https://ui.adsabs.harvard.edu/abs/2026ApJ..1007L..23V
+  arxiv: https://arxiv.org/abs/2606.25636
+  doi: https://doi.org/10.3847/2041-8213/ae8f44
+  bibcode: 2026ApJ..1007L..23V
+
+- title: "No evolution in the number density of little red dots from cosmic dawn to cosmic noon"
+  authors: ["Loiacono, F.", "Gilli, R.", "Mignoli, M.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "27"
+  journal: "arXiv preprint"
+  year: 2026
+  month: 6
+  topics: ["High-redshift AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2026arXiv260630253L
+  arxiv: https://arxiv.org/abs/2606.30253
+  doi: https://doi.org/10.48550/arXiv.2606.30253
+  bibcode: 2026arXiv260630253L
+
+- title: "The X-ray-to-UV relation does not evolve in homogeneous quasar samples"
+  authors: ["Risaliti, G.", "Lusso, E.", "Nardini, E.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "9"
+  journal: "arXiv preprint"
+  year: 2026
+  month: 6
+  topics: ["Disc–corona interaction", "Cosmology with AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2026arXiv260607730R
+  arxiv: https://arxiv.org/abs/2606.07730
+  doi: https://doi.org/10.48550/arXiv.2606.07730
+  bibcode: 2026arXiv260607730R
+
+- title: "Delving into the depths of NGC 3783 with XRISM: V. Broad-band modelling of ionized outflows"
+  authors: ["Zhao, K.", "Kaastra, J. S.", "Gu, L.", "…", "Signorini, M."]
+  n_authors: "10"
+  journal: "A&A"
+  year: 2026
+  month: 6
+  topics: ["Other"]
+  ads: https://ui.adsabs.harvard.edu/abs/2026A&A...710A.192Z
+  arxiv: https://arxiv.org/abs/2604.21710
+  doi: https://doi.org/10.1051/0004-6361/202659111
+  bibcode: 2026A&A...710A.192Z
+
+- title: "Resolved UV–Optical HST Imaging and Spectral Energy Distribution Modeling of Nearby BAT Active Galactic Nuclei"
+  authors: ["Auge, C.", "Koss, M.", "Gupta, K. K.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "20"
+  journal: "ApJ"
+  year: 2026
+  month: 5
+  topics: ["BASS collaboration"]
+  ads: https://ui.adsabs.harvard.edu/abs/2026ApJ..1002..106A
+  arxiv: https://arxiv.org/abs/2604.19674
+  doi: https://doi.org/10.3847/1538-4357/ae581d
+  bibcode: 2026ApJ..1002..106A
+
+- title: "BASS: LV. Connecting X-ray variability with physical properties of active galactic nuclei and a new path to cosmological distances"
+  authors: ["Signorini, M.", "Ricci, F.", "Tortosa, A."]
+  et_al: true
+  n_authors: "21"
+  journal: "A&A"
+  year: 2026
+  month: 5
+  topics: ["BASS collaboration", "Cosmology with AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2026A&A...710A...9S
+  arxiv: https://arxiv.org/abs/2602.20315
+  doi: https://doi.org/10.1051/0004-6361/202558009
+  bibcode: 2026A&A...710A...9S
+
+- title: "BASS: LI. Cool gas supply of HI-massive local Seyfert galaxies"
+  authors: ["Kim, J.", "Chung, A.", "Wong, O. I.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "22"
+  journal: "A&A"
+  year: 2026
+  month: 4
+  topics: ["BASS collaboration"]
+  ads: https://ui.adsabs.harvard.edu/abs/2026A&A...708A.268K
+  arxiv: https://arxiv.org/abs/2603.15752
+  doi: https://doi.org/10.1051/0004-6361/202556901
+  bibcode: 2026A&A...708A.268K
+
+- title: "The X-ray properties of the most luminous quasars with strong emission-line outflows"
+  authors: ["Shlentsova, A.", "Trefoloni, B.", "Signorini, M."]
+  et_al: true
+  n_authors: "10"
+  journal: "A&A"
   year: 2026
   month: 3
-  topics: [Disc–corona interaction]
-  ads: https://ui.adsabs.harvard.edu/
-  arxiv: https://arxiv.org/
+  topics: ["Disc–corona interaction"]
+  ads: https://ui.adsabs.harvard.edu/abs/2026A&A...707A.313S
+  arxiv: https://arxiv.org/abs/2602.06793
+  doi: https://doi.org/10.1051/0004-6361/202555381
+  bibcode: 2026A&A...707A.313S
 
-- title: Placeholder title of a co-authored paper spanning two topics
-  authors: ["Coauthor, A.", "Signorini, M.", "Coauthor, C."]
-  journal: A&A
+- title: "The radio properties of the JWST-discovered AGN"
+  authors: ["Mazzolari, G.", "Gilli, R.", "Maiolino, R.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "26"
+  journal: "A&A"
+  year: 2026
+  month: 2
+  topics: ["High-redshift AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2026A&A...706A.372M
+  arxiv: https://arxiv.org/abs/2412.04224
+  doi: https://doi.org/10.1051/0004-6361/202453317
+  bibcode: 2026A&A...706A.372M
+
+- title: "Delving into the depths of NGC 3783 with XRISM: IV. Mapping of the accretion flow with Fe Kα emission lines"
+  authors: ["Li, C.", "Kaastra, J. S.", "Gu, L.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "21"
+  journal: "A&A"
+  year: 2026
+  month: 2
+  topics: ["Disc–corona interaction"]
+  ads: https://ui.adsabs.harvard.edu/abs/2026A&A...706A.255L
+  arxiv: https://arxiv.org/abs/2512.09207
+  doi: https://doi.org/10.1051/0004-6361/202557710
+  bibcode: 2026A&A...706A.255L
+
+- title: "The accretion of quasars at the epoch of reionisation: JWST catches the primeval monsters slowly feasting"
+  authors: ["Trefoloni, B.", "Nardini, E.", "Carniani, S.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "11"
+  journal: "arXiv preprint"
+  year: 2025
+  month: 12
+  topics: ["High-redshift AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2025arXiv251216981T
+  arxiv: https://arxiv.org/abs/2512.16981
+  doi: https://doi.org/10.48550/arXiv.2512.16981
+  bibcode: 2025arXiv251216981T
+
+- title: "BASS. LIV. Physical Properties of AGN-hosting Galaxy Mergers from Multiwavelength SED Fitting"
+  authors: ["Troncoso, M.", "Treister, E.", "Rojas, A.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "20"
+  journal: "ApJ"
+  year: 2025
+  month: 12
+  topics: ["BASS collaboration"]
+  ads: https://ui.adsabs.harvard.edu/abs/2025ApJ...994..181T
+  arxiv: https://arxiv.org/abs/2509.17720
+  doi: https://doi.org/10.3847/1538-4357/ae0a4b
+  bibcode: 2025ApJ...994..181T
+
+- title: "Delving into the depths of NGC 3783 with XRISM: III. Birth of an ultrafast outflow during a soft flare"
+  authors: ["Gu, L.", "Fukumura, K.", "Kaastra, J.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "21"
+  journal: "A&A"
+  year: 2025
+  month: 12
+  topics: ["Other"]
+  ads: https://ui.adsabs.harvard.edu/abs/2025A&A...704A.146G
+  arxiv: https://arxiv.org/abs/2512.08448
+  doi: https://doi.org/10.1051/0004-6361/202557189
+  bibcode: 2025A&A...704A.146G
+
+- title: "The X-ray–UV luminosity relation of eROSITA quasars"
+  authors: ["Sacchi, A.", "Risaliti, G.", "Signorini, M."]
+  et_al: true
+  n_authors: "6"
+  journal: "A&A"
   year: 2025
   month: 11
-  topics: [Cosmology with AGN, Obscured AGN]
-  ads: https://ui.adsabs.harvard.edu/
+  topics: ["Disc–corona interaction", "Cosmology with AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2025A&A...703A.273S
+  arxiv: https://arxiv.org/abs/2508.00732
+  doi: https://doi.org/10.1051/0004-6361/202556708
+  bibcode: 2025A&A...703A.273S
 
-- title: Another first-author paper, this time on topic two
-  authors: ["Signorini, M.", "Coauthor, D."]
-  journal: MNRAS
+- title: "The Advanced X-ray Imaging Satellite (AXIS) Community Science Book"
+  authors: ["Koss, M.", "Aftab, N.", "Allen, S. W.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "200+"
+  journal: "arXiv preprint"
+  year: 2025
+  month: 10
+  topics: ["Other"]
+  ads: https://ui.adsabs.harvard.edu/abs/2025arXiv251100253K
+  arxiv: https://arxiv.org/abs/2511.00253
+  doi: https://doi.org/10.48550/arXiv.2511.00253
+  bibcode: 2025arXiv251100253K
+
+- title: "A big red dot at cosmic noon"
+  authors: ["Loiacono, F.", "Gilli, R.", "Mignoli, M.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "25"
+  journal: "A&A"
+  year: 2025
+  month: 10
+  topics: ["High-redshift AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2025A&A...703A..36L
+  arxiv: https://arxiv.org/abs/2506.12141
+  doi: https://doi.org/10.1051/0004-6361/202555946
+  bibcode: 2025A&A...703A..36L
+
+- title: "Delving into the depths of NGC 3783 with XRISM: II. Cross-calibration of X-ray instruments used in the large, multi-mission observational campaign"
+  authors: ["Xrism Collaboration", "Audard, M.", "Awaki, H.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "140"
+  journal: "A&A"
+  year: 2025
+  month: 10
+  topics: ["Other"]
+  ads: https://ui.adsabs.harvard.edu/abs/2025A&A...702A.147X
+  arxiv: https://arxiv.org/abs/2509.08649
+  doi: https://doi.org/10.1051/0004-6361/202556000
+  bibcode: 2025A&A...702A.147X
+
+- title: "Quasar cosmology II: Joint analyses with cosmic microwave background"
+  authors: ["Benetti, M.", "Bargiacchi, G.", "Risaliti, G.", "…", "Signorini, M."]
+  n_authors: "6"
+  journal: "Phys. Dark Univ."
+  year: 2025
+  month: 9
+  topics: ["Cosmology with AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2025PDU....4901983B
+  arxiv: https://arxiv.org/abs/2506.21477
+  doi: https://doi.org/10.1016/j.dark.2025.101983
+  bibcode: 2025PDU....4901983B
+
+- title: "BASS. XLIX. Characterization of Highly Luminous and Obscured AGNs: Local X-Ray and [Ne V]λ3426 Emission in Comparison with the High-redshift Universe"
+  authors: ["Peca, A.", "Koss, M. J.", "Oh, K.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "24"
+  journal: "ApJ"
+  year: 2025
+  month: 9
+  topics: ["BASS collaboration", "Obscured AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2025ApJ...990....3P
+  arxiv: https://arxiv.org/abs/2507.10674
+  doi: https://doi.org/10.3847/1538-4357/adec9a
+  bibcode: 2025ApJ...990....3P
+
+- title: "Active galactic nuclei with massive black holes have closer galactic neighbors: k-nearest-neighbor statistics of an unbiased sample at z ~ 0.03"
+  authors: ["Mhatre, A.", "Powell, M. C.", "Yuan, S.", "…", "Signorini, M."]
+  n_authors: "13"
+  journal: "A&A"
+  year: 2025
+  month: 9
+  topics: ["BASS collaboration"]
+  ads: https://ui.adsabs.harvard.edu/abs/2025A&A...701A..45M
+  arxiv: https://arxiv.org/abs/2506.21705
+  doi: https://doi.org/10.1051/0004-6361/202555295
+  bibcode: 2025A&A...701A..45M
+
+- title: "The near-infrared spectral energy distribution of blue quasars: Determining what drives the evolution of the dusty torus"
+  authors: ["Trefoloni, B.", "Gilli, R.", "Lusso, E.", "…", "Signorini, M."]
+  n_authors: "8"
+  journal: "A&A"
+  year: 2025
+  month: 5
+  topics: ["Other"]
+  ads: https://ui.adsabs.harvard.edu/abs/2025A&A...697A.223T
+  arxiv: https://arxiv.org/abs/2410.10941
+  doi: https://doi.org/10.1051/0004-6361/202452609
+  bibcode: 2025A&A...697A.223T
+
+- title: "JWST meets Chandra: a large population of Compton thick, feedback-free, and intrinsically X-ray weak AGN, with a sprinkle of SNe"
+  authors: ["Maiolino, R.", "Risaliti, G.", "Signorini, M."]
+  et_al: true
+  n_authors: "25"
+  journal: "MNRAS"
   year: 2025
   month: 4
-  topics: [Cosmology with AGN]
-  ads: https://ui.adsabs.harvard.edu/
-  arxiv: https://arxiv.org/
+  topics: ["Obscured AGN", "High-redshift AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2025MNRAS.538.1921M
+  arxiv: https://arxiv.org/abs/2405.00504
+  doi: https://doi.org/10.1093/mnras/staf359
+  bibcode: 2025MNRAS.538.1921M
 
-- title: A large collaboration paper where you are somewhere in the list
-  authors: ["Lead, E.", "Coauthor, F.", "Coauthor, G.", "Signorini, M.", "et al."]
-  journal: Nat. Astron.
+- title: "AGN STORM 2. IX. Studying the Dynamics of the Ionized Obscurer in Mrk 817 with High-resolution X-Ray Spectroscopy"
+  authors: ["Zaidouni, F.", "Kara, E.", "Kosec, P.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "48"
+  journal: "ApJ"
+  year: 2024
+  month: 10
+  topics: ["STORM2 collaboration"]
+  ads: https://ui.adsabs.harvard.edu/abs/2024ApJ...974...91Z
+  arxiv: https://arxiv.org/abs/2406.17061
+  doi: https://doi.org/10.3847/1538-4357/ad6771
+  bibcode: 2024ApJ...974...91Z
+
+- title: "Quasars as standard candles: VI. Spectroscopic validation of the cosmological sample"
+  authors: ["Trefoloni, B.", "Lusso, E.", "Nardini, E.", "…", "Signorini, M."]
+  n_authors: "9"
+  journal: "A&A"
   year: 2024
   month: 9
-  topics: [Disc–corona interaction]
-  ads: https://ui.adsabs.harvard.edu/
+  topics: ["Cosmology with AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2024A&A...689A.109T
+  arxiv: https://arxiv.org/abs/2404.07205
+  doi: https://doi.org/10.1051/0004-6361/202348938
+  bibcode: 2024A&A...689A.109T
 
-- title: An earlier first-author paper from your PhD
-  authors: ["Signorini, M.", "Supervisor, H."]
-  journal: ApJ
-  year: 2023
-  month: 6
-  topics: [Obscured AGN]
-  ads: https://ui.adsabs.harvard.edu/
+- title: "Quasars as standard candles. V. Accounting for the dispersion in the L<sub>X</sub>–L<sub>UV</sub> relation down to ≤ 0.06 dex"
+  authors: ["Signorini, M.", "Risaliti, G.", "Lusso, E."]
+  et_al: true
+  n_authors: "7"
+  journal: "A&A"
+  year: 2024
+  month: 7
+  topics: ["Cosmology with AGN", "Disc–corona interaction"]
+  ads: https://ui.adsabs.harvard.edu/abs/2024A&A...687A..32S
+  arxiv: https://arxiv.org/abs/2312.08448
+  doi: https://doi.org/10.1051/0004-6361/202348941
+  bibcode: 2024A&A...687A..32S
 
-- title: A co-authored paper on topic one with a short title
-  authors: ["Coauthor, I.", "Signorini, M."]
-  journal: A&A
-  year: 2022
+- title: "AGN STORM 2. VI. Mapping Temperature Fluctuations in the Accretion Disk of Mrk 817"
+  authors: ["Neustadt, J. M. M.", "Kochanek, C. S.", "Montano, J.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "52"
+  journal: "ApJ"
+  year: 2024
   month: 2
-  topics: [Disc–corona interaction]
-  ads: https://ui.adsabs.harvard.edu/
+  topics: ["STORM2 collaboration"]
+  ads: https://ui.adsabs.harvard.edu/abs/2024ApJ...961..219N
+  arxiv: https://arxiv.org/abs/2310.01497
+  doi: https://doi.org/10.3847/1538-4357/ad1386
+  bibcode: 2024ApJ...961..219N
 
-- title: Placeholder title of a paper that's currently under review
-  authors: ["Signorini, M.", "Coauthor, A."]
-  journal: Submitted
-  year: 2026
+- title: "Nonparametric analysis of the Hubble diagram with neural networks"
+  authors: ["Giambagli, L.", "Fanelli, D.", "Risaliti, G.", "Signorini, M."]
+  journal: "A&A"
+  year: 2023
+  month: 10
+  topics: ["Cosmology with AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2023A&A...678A..13G
+  arxiv: https://arxiv.org/abs/2302.12582
+  doi: https://doi.org/10.1051/0004-6361/202346236
+  bibcode: 2023A&A...678A..13G
+
+- title: "Building the high-redshift Hubble Diagram with quasars"
+  authors: ["Signorini, M.", "Risaliti, G.", "Sacchi, A.", "Lusso, E.", "Nardini, E."]
+  journal: "Mem. SAIt"
+  year: 2023
   month: 9
-  topics: [Disc–corona interaction, Cosmology with AGN]
-  arxiv: https://arxiv.org/
+  topics: ["Cosmology with AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2023MmSAI..94b.259S
+  arxiv: https://arxiv.org/abs/2401.07909
+  doi: https://doi.org/10.36116/MEMSAIT_94N2.2023.259
+  bibcode: 2023MmSAI..94b.259S
+
+- title: "The most luminous blue quasars at 3.0 &lt; z &lt; 3.3. III. LBT spectra and accretion parameters"
+  authors: ["Trefoloni, B.", "Lusso, E.", "Nardini, E.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "16"
+  journal: "A&A"
+  year: 2023
+  month: 9
+  topics: ["High-redshift AGN", "Disc–corona interaction"]
+  ads: https://ui.adsabs.harvard.edu/abs/2023A&A...677A.111T
+  arxiv: https://arxiv.org/abs/2305.07699
+  doi: https://doi.org/10.1051/0004-6361/202346024
+  bibcode: 2023A&A...677A.111T
+
+- title: "Quasars as standard candles. IV. Analysis of the X-ray and UV indicators of the disc-corona relation"
+  authors: ["Signorini, M.", "Risaliti, G.", "Lusso, E."]
+  et_al: true
+  n_authors: "7"
+  journal: "A&A"
+  year: 2023
+  month: 8
+  topics: ["Disc–corona interaction", "Cosmology with AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2023A&A...676A.143S
+  arxiv: https://arxiv.org/abs/2306.16438
+  doi: https://doi.org/10.1051/0004-6361/202346104
+  bibcode: 2023A&A...676A.143S
+
+- title: "X-ray properties and obscured fraction of AGN in the J1030 Chandra field"
+  authors: ["Signorini, M.", "Marchesi, S.", "Gilli, R."]
+  et_al: true
+  n_authors: "16"
+  journal: "A&A"
+  year: 2023
+  month: 8
+  topics: ["Obscured AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2023A&A...676A..49S
+  arxiv: https://arxiv.org/abs/2305.13368
+  doi: https://doi.org/10.1051/0004-6361/202346364
+  bibcode: 2023A&A...676A..49S
+
+- title: "Quasars as high-redshift standard candles"
+  authors: ["Risaliti, G.", "Lusso, E.", "Nardini, E.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "8"
+  journal: "Astron. Nachr."
+  year: 2023
+  month: 5
+  topics: ["Cosmology with AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2023AN....34430054R
+  arxiv: https://arxiv.org/abs/2304.13752
+  doi: https://doi.org/10.1002/asna.20230054
+  bibcode: 2023AN....34430054R
+
+- title: "LBT-MODS spectroscopy of high-redshift candidates in the Chandra J1030 field. A newly discovered z ~ 2.8 large-scale structure"
+  authors: ["Marchesi, S.", "Mignoli, M.", "Gilli, R.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "16"
+  journal: "A&A"
+  year: 2023
+  month: 5
+  topics: ["High-redshift AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2023A&A...673A..97M
+  arxiv: https://arxiv.org/abs/2303.13575
+  doi: https://doi.org/10.1051/0004-6361/202245513
+  bibcode: 2023A&A...673A..97M
+
+- title: "Quasars at High-Redshift: Physics and Cosmology"
+  authors: ["RisalitI, G.", "Caccianiga, A.", "Gilli, R.", "…", "Signorini, M."]
+  et_al: true
+  n_authors: "25"
+  journal: "Mem. SAIt"
+  year: 2022
+  month: 11
+  topics: ["Cosmology with AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2022MmSAI..93b..64R
+  doi: https://doi.org/10.36116/MEMSAIT_93N2_3.2022.8
+  bibcode: 2022MmSAI..93b..64R
+
+- title: "Quasar cosmology: dark energy evolution and spatial curvature"
+  authors: ["Bargiacchi, G.", "Benetti, M.", "Capozziello, S.", "…", "Signorini, M."]
+  n_authors: "6"
+  journal: "MNRAS"
+  year: 2022
+  month: 9
+  topics: ["Cosmology with AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2022MNRAS.515.1795B
+  arxiv: https://arxiv.org/abs/2111.02420
+  doi: https://doi.org/10.1093/mnras/stac1941
+  bibcode: 2022MNRAS.515.1795B
+
+- title: "Quasars as high-redshift standard candles"
+  authors: ["Sacchi, A.", "Risaliti, G.", "Signorini, M."]
+  et_al: true
+  n_authors: "13"
+  journal: "A&A"
+  year: 2022
+  month: 7
+  topics: ["Cosmology with AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2022A&A...663L...7S
+  arxiv: https://arxiv.org/abs/2206.13528
+  doi: https://doi.org/10.1051/0004-6361/202243411
+  bibcode: 2022A&A...663L...7S
+
+- title: "The most luminous blue quasars at 3.0 &lt; z &lt; 3.3. II. C IV/X-ray emission and accretion disc physics"
+  authors: ["Lusso, E.", "Nardini, E.", "Bisogni, S.", "…", "Signorini, M."]
+  n_authors: "15"
+  journal: "A&A"
+  year: 2021
+  month: 9
+  topics: ["Disc–corona interaction"]
+  ads: https://ui.adsabs.harvard.edu/abs/2021A&A...653A.158L
+  arxiv: https://arxiv.org/abs/2107.02806
+  doi: https://doi.org/10.1051/0004-6361/202141356
+  bibcode: 2021A&A...653A.158L
+
+- title: "Cosmography by orthogonalized logarithmic polynomials"
+  authors: ["Bargiacchi, G.", "Risaliti, G.", "Benetti, M.", "…", "Signorini, M."]
+  n_authors: "7"
+  journal: "A&A"
+  year: 2021
+  month: 5
+  topics: ["Cosmology with AGN"]
+  ads: https://ui.adsabs.harvard.edu/abs/2021A&A...649A..65B
+  arxiv: https://arxiv.org/abs/2101.08278
+  doi: https://doi.org/10.1051/0004-6361/202140386
+  bibcode: 2021A&A...649A..65B

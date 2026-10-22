@@ -37,7 +37,7 @@
 .c-sky    { --c: var(--sky); }
 .c-green  { --c: var(--green); }
 .c-orange { --c: var(--orange); }
-.c-ink    { --c: var(--rule); }
+.c-ink    { --c: var(--muted); }
 
 /* ========================= base ========================= */
 *, *::before, *::after { box-sizing: border-box; }
@@ -215,3 +215,4 @@ body::before {
 address { font-style: normal; color: var(--muted); }
 .footer { text-align: center; color: var(--muted); font: 400 .8rem var(--font); padding: 2rem 16px 3rem; }
 .nowrap { white-space: nowrap; }
+.n-authors { white-space: nowrap; }

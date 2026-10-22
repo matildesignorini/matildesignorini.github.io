@@ -67,6 +67,7 @@ layout: default
     </div>
 
     {%- assign pubs = site.data.publications | sort: "year" | reverse %}
+    {%- comment %} The script re-sorts by year and month and adds the toggles. {% endcomment %}
     <div class="pub-box">
       <ol class="pubs">
         {%- for pub in pubs %}
@@ -78,8 +79,10 @@ layout: default
             <p class="pub-title">{% if pub.ads %}<a href="{{ pub.ads }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</p>
             <p class="pub-authors">
               {%- for a in pub.authors -%}
-                {%- if a == site.me %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}; {% endunless -%}
+                {%- if a == site.me %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}{% if a == "…" %} {% else %}; {% endif %}{% endunless -%}
               {%- endfor -%}
+              {%- if pub.et_al %} et al.{% endif -%}
+              {%- if pub.n_authors %} <span class="n-authors">({{ pub.n_authors }} authors)</span>{% endif -%}
             </p>
             <p class="pub-meta">
               <span class="journal">{{ pub.journal }}</span>
@@ -114,7 +117,7 @@ layout: default
     <ul class="entries">
       {%- for t in site.data.talks %}
       <li>
-        <time datetime="{{ t.date }}">{{ t.date | date: "%b %Y" }}</time>
+        <time datetime="{{ t.year }}">{{ t.year }}</time>
         <div>
           <p class="entry-title">{{ t.title }}</p>
           <p class="entry-meta">{{ t.event }}{% if t.place %}, {{ t.place }}{% endif %}</p>

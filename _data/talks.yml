@@ -1,23 +1,68 @@
-# Invited talks, newest first.
-#   slides:    put the file in /files/slides/ and write its path here
-#              (PDF is best: it opens in any browser; .pptx also works,
-#              but visitors have to download it)
+# Invited talks and seminars, newest first.
+#   year:      shown on the left
+#   title:     talk title (<sub>…</sub> works for subscripts)
+#   event, place
+#   slides:    put the file in /files/slides/ and write its path here,
+#              e.g. /files/slides/2026-brindisi.pdf (PDF is best: it opens
+#              in any browser; .pptx also works but has to be downloaded)
 #   recording: link to the video, if there is one
 
-- title: Placeholder title of an invited talk
-  event: Name of the conference or seminar series
-  place: Institute, City
-  date: 2026-05-14
-  slides: /files/slides/example-talk.pdf
-  recording: https://www.youtube.com/
+- year: 2026
+  title: "The L<sub>X</sub>–L<sub>UV</sub> relation in quasars: a new sample"
+  event: AGN XVI
+  place: Brindisi, Italy
 
-- title: Another invited seminar
-  event: Departmental colloquium
-  place: University, City
-  date: 2025-11-02
-  slides: /files/slides/example-talk.pdf
+- year: 2026
+  title: Connecting X-ray variability with AGN physical properties and a new path to cosmological distances
+  event: SEAWIND conference
+  place: Palermo, Italy
 
-- title: A talk with no slides online
-  event: Workshop name
-  place: City
-  date: 2024-06-20
+- year: 2025
+  title: Quasars as standard(izable) candles
+  event: LUPM seminar
+  place: Montpellier, France
+
+- year: 2025
+  title: X-ray variability in low-redshift AGN
+  event: SRON seminar
+  place: Leiden, The Netherlands
+
+- year: 2025
+  title: "STORM2: variability in the multi-year monitoring of Mrk 817"
+  event: Vasto Accretion Meeting
+  place: Italy
+
+- year: 2025
+  title: Study of possible systematics in the use of quasars as standard candles
+  event: Cosmoverse workshop
+  place: Naples, Italy
+
+- year: 2025
+  title: AGN as cosmological probes
+  event: ESO lunch talk
+  place: Garching, Germany
+
+- year: 2024
+  title: Distance measurements with Active Galactic Nuclei
+  event: INAF Rome Observatory
+  place: Italy
+
+- year: 2023
+  title: "Reverberation mapping: high-z SMBH masses, BLR physics and H₀"
+  event: UNLV
+  place: Las Vegas, USA
+
+- year: 2023
+  title: The Mass of a Supermassive Black Hole More Than 10 Billion Light-years Away
+  event: Cal Poly
+  place: San Luis Obispo, CA, USA
+
+- year: 2023
+  title: Quasars as cosmological tools
+  event: UC Riverside
+  place: CA, USA
+
+- year: 2023
+  title: Non-parametric analysis of the Hubble Diagram with Neural Networks
+  event: Machine Learning the GGI Workshop
+  place: Florence, Italy
