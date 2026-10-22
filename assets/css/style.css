@@ -225,7 +225,7 @@ address { font-style: normal; color: var(--muted); }
 .n-authors { white-space: nowrap; }
 .pub-meta .status { font-weight: 600; color: var(--yellow); }
 
-/* the "Master's thesis" note in the bio */
+/* the thesis note in the bio */
 .bio .callout {
   border-left: 3px solid var(--yellow);
   padding: .5rem 0 .5rem .9rem;
