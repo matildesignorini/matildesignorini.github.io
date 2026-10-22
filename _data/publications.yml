@@ -24,7 +24,7 @@
   journal: "New Astron."
   year: 2026
   month: 11
-  topics: ["Cosmology with AGN"]
+  topics: ["Cosmology with AGN", "Other"]
   ads: https://ui.adsabs.harvard.edu/abs/2026NewA..12802592S
   arxiv: https://arxiv.org/abs/2607.00209
   doi: https://doi.org/10.1016/j.newast.2026.102592
@@ -50,7 +50,7 @@
   journal: "A&A"
   year: 2026
   month: 9
-  topics: ["Obscured AGN"]
+  topics: ["Obscured AGN", "High-redshift AGN"]
   ads: https://ui.adsabs.harvard.edu/abs/2026A&A...713A.139M
   arxiv: https://arxiv.org/abs/2603.10176
   doi: https://doi.org/10.1051/0004-6361/202554915
@@ -101,7 +101,7 @@
   journal: "A&A"
   year: 2026
   month: 6
-  topics: ["Other"]
+  topics: ["Other", "Obscured AGN"]
   ads: https://ui.adsabs.harvard.edu/abs/2026A&A...710A.192Z
   arxiv: https://arxiv.org/abs/2604.21710
   doi: https://doi.org/10.1051/0004-6361/202659111
@@ -127,7 +127,7 @@
   journal: "A&A"
   year: 2026
   month: 5
-  topics: ["BASS collaboration", "Cosmology with AGN"]
+  topics: ["BASS collaboration", "Cosmology with AGN", "Disc–corona interaction"]
   ads: https://ui.adsabs.harvard.edu/abs/2026A&A...710A...9S
   arxiv: https://arxiv.org/abs/2602.20315
   doi: https://doi.org/10.1051/0004-6361/202558009
@@ -179,7 +179,7 @@
   journal: "A&A"
   year: 2026
   month: 2
-  topics: ["Disc–corona interaction"]
+  topics: ["Disc–corona interaction", "Obscured AGN"]
   ads: https://ui.adsabs.harvard.edu/abs/2026A&A...706A.255L
   arxiv: https://arxiv.org/abs/2512.09207
   doi: https://doi.org/10.1051/0004-6361/202557710
@@ -218,7 +218,7 @@
   journal: "A&A"
   year: 2025
   month: 12
-  topics: ["Other"]
+  topics: ["Other", "Obscured AGN"]
   ads: https://ui.adsabs.harvard.edu/abs/2025A&A...704A.146G
   arxiv: https://arxiv.org/abs/2512.08448
   doi: https://doi.org/10.1051/0004-6361/202557189
@@ -319,7 +319,7 @@
   journal: "A&A"
   year: 2025
   month: 5
-  topics: ["Other"]
+  topics: ["Other", "Obscured AGN"]
   ads: https://ui.adsabs.harvard.edu/abs/2025A&A...697A.223T
   arxiv: https://arxiv.org/abs/2410.10941
   doi: https://doi.org/10.1051/0004-6361/202452609
@@ -345,7 +345,7 @@
   journal: "ApJ"
   year: 2024
   month: 10
-  topics: ["STORM2 collaboration"]
+  topics: ["STORM2 collaboration", "Obscured AGN"]
   ads: https://ui.adsabs.harvard.edu/abs/2024ApJ...974...91Z
   arxiv: https://arxiv.org/abs/2406.17061
   doi: https://doi.org/10.3847/1538-4357/ad6771
@@ -357,7 +357,7 @@
   journal: "A&A"
   year: 2024
   month: 9
-  topics: ["Cosmology with AGN"]
+  topics: ["Cosmology with AGN", "Disc–corona interaction"]
   ads: https://ui.adsabs.harvard.edu/abs/2024A&A...689A.109T
   arxiv: https://arxiv.org/abs/2404.07205
   doi: https://doi.org/10.1051/0004-6361/202348938
@@ -470,7 +470,7 @@
   journal: "A&A"
   year: 2023
   month: 5
-  topics: ["High-redshift AGN"]
+  topics: ["Other"]
   ads: https://ui.adsabs.harvard.edu/abs/2023A&A...673A..97M
   arxiv: https://arxiv.org/abs/2303.13575
   doi: https://doi.org/10.1051/0004-6361/202245513
@@ -507,7 +507,7 @@
   journal: "A&A"
   year: 2022
   month: 7
-  topics: ["Cosmology with AGN"]
+  topics: ["Cosmology with AGN", "Disc–corona interaction"]
   ads: https://ui.adsabs.harvard.edu/abs/2022A&A...663L...7S
   arxiv: https://arxiv.org/abs/2206.13528
   doi: https://doi.org/10.1051/0004-6361/202243411
