@@ -66,8 +66,8 @@ layout: default
       <span class="pub-count" aria-live="polite"></span>
     </div>
 
-    {%- assign pubs = site.data.publications | sort: "year" | reverse %}
-    {%- comment %} The script re-sorts by year and month and adds the toggles. {% endcomment %}
+    {%- assign pubs = site.data.publications %}
+    {%- comment %} publications.yml is kept newest first; the script adds the toggles. {% endcomment %}
     <div class="pub-box scroll-box">
       <ol class="pubs">
         {%- for pub in pubs %}

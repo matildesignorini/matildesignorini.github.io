@@ -105,7 +105,9 @@ out = ["# Generated from an ADS BibTeX export. Order doesn't matter: the site so
        "#   topics:    one or more topic names from _data/profile.yml.",
        "#              A topic that isn't in profile.yml shows up grey, at the end.",
        ""]
-for e in parse(src):
+def when(e):
+    return (int(e["year"]), MONTHS.get(e.get("month", "")[:3].lower(), 0))
+for e in sorted(parse(src), key=when, reverse=True):   # newest first
     names = [author(a) for a in re.split(r"\s+and\s+", e["author"].replace("\n", " "))]
     me = next((i for i, n in enumerate(names) if n.startswith("Signorini, M")), None)
     truncated = me is None          # ADS stops listing authors at 200
