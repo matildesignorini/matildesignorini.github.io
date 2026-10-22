@@ -1,6 +1,9 @@
 # Site settings
 title: Matilde Signorini
-description: Personal academic website of Matilde Signorini
+description: >-
+  Matilde Signorini, astrophysicist and ESA Research Fellow at ESTEC,
+  working on active galactic nuclei (AGN), X-ray astronomy and cosmology
+  with quasars.
 url: "https://matildesignorini.com"
 baseurl: ""
 lang: en
@@ -9,6 +12,9 @@ lang: en
 # exactly is shown in bold, and a paper where it comes first counts as
 # "first author".
 me: "Signorini, M."
+
+plugins:
+  - jekyll-sitemap      # writes /sitemap.xml for search engines
 
 markdown: kramdown
 kramdown:

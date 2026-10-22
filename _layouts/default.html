@@ -4,7 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}">
+  {%- assign p = site.data.profile %}
+  <meta name="description" content="{{ site.description | strip | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description | strip | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ p.photo | absolute_url }}">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": {{ p.name | jsonify }},
+    "url": {{ "/" | absolute_url | jsonify }},
+    "image": {{ p.photo | absolute_url | jsonify }},
+    "jobTitle": "Research Fellow",
+    "description": {{ site.description | strip | jsonify }},
+    "affiliation": { "@type": "Organization", "name": "European Space Agency (ESA-ESTEC)" },
+    "knowsAbout": {{ p.interests | map: "topic" | jsonify }},
+    "sameAs": {{ p.links | map: "url" | jsonify }}
+  }
+  </script>
   <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="icon" href="{{ '/images/favicon-32.png' | relative_url }}" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="{{ '/images/apple-touch-icon.png' | relative_url }}">
