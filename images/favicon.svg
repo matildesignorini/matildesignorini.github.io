@@ -7,7 +7,7 @@
     <ellipse cx="32" cy="32" rx="27" ry="9.5" fill="#e3a43a"/>
     <ellipse cx="32" cy="32" rx="18" ry="5.6" fill="#f2cf45"/>
     <ellipse cx="32" cy="32" rx="9" ry="2.8" fill="#fff3c4"/>
-    <circle cx="32" cy="32" r="5.2" fill="#0b1230"/>
-    <path d="M26.8 32 A5.2 5.2 0 0 0 37.2 32" fill="none" stroke="#fff3c4" stroke-width="1.6"/>
+    <path d="M26.4 32 A5.6 5.6 0 0 0 37.6 32" fill="none" stroke="#fff3c4" stroke-width="1.6"/>
+    <circle cx="32" cy="32" r="4.8" fill="#0b1230"/>
   </g>
 </svg>
