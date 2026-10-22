@@ -3,6 +3,7 @@
 #   authors:   the first authors, then "…" and you if you're further down.
 #   et_al:     true adds "et al." after the names shown.
 #   n_authors: total number of authors, shown when the list is shortened.
+#   status:    optional note shown before the journal, e.g. "Submitted to A&A".
 #   topics:    one or more topic names from _data/profile.yml.
 #              A topic that isn't in profile.yml shows up grey, at the end.
 
@@ -34,7 +35,8 @@
   authors: ["Signorini, M.", "Sacchi, A.", "Trefoloni, B."]
   et_al: true
   n_authors: "10"
-  journal: "arXiv preprint"
+  status: "Submitted to A&A"
+  journal: "arXiv:2609.37607"
   year: 2026
   month: 9
   topics: ["Disc–corona interaction"]
@@ -50,7 +52,7 @@
   journal: "A&A"
   year: 2026
   month: 9
-  topics: ["Obscured AGN", "High-redshift AGN"]
+  topics: ["Obscuration and outflows", "High-redshift AGN"]
   ads: https://ui.adsabs.harvard.edu/abs/2026A&A...713A.139M
   arxiv: https://arxiv.org/abs/2603.10176
   doi: https://doi.org/10.1051/0004-6361/202554915
@@ -73,7 +75,7 @@
   authors: ["Loiacono, F.", "Gilli, R.", "Mignoli, M.", "…", "Signorini, M."]
   et_al: true
   n_authors: "27"
-  journal: "arXiv preprint"
+  journal: "arXiv:2606.30253"
   year: 2026
   month: 6
   topics: ["High-redshift AGN"]
@@ -86,7 +88,7 @@
   authors: ["Risaliti, G.", "Lusso, E.", "Nardini, E.", "…", "Signorini, M."]
   et_al: true
   n_authors: "9"
-  journal: "arXiv preprint"
+  journal: "arXiv:2606.07730"
   year: 2026
   month: 6
   topics: ["Disc–corona interaction", "Cosmology with AGN"]
@@ -101,7 +103,7 @@
   journal: "A&A"
   year: 2026
   month: 6
-  topics: ["Other", "Obscured AGN"]
+  topics: ["Other", "Obscuration and outflows"]
   ads: https://ui.adsabs.harvard.edu/abs/2026A&A...710A.192Z
   arxiv: https://arxiv.org/abs/2604.21710
   doi: https://doi.org/10.1051/0004-6361/202659111
@@ -179,7 +181,7 @@
   journal: "A&A"
   year: 2026
   month: 2
-  topics: ["Disc–corona interaction", "Obscured AGN"]
+  topics: ["Disc–corona interaction", "Obscuration and outflows"]
   ads: https://ui.adsabs.harvard.edu/abs/2026A&A...706A.255L
   arxiv: https://arxiv.org/abs/2512.09207
   doi: https://doi.org/10.1051/0004-6361/202557710
@@ -189,7 +191,7 @@
   authors: ["Trefoloni, B.", "Nardini, E.", "Carniani, S.", "…", "Signorini, M."]
   et_al: true
   n_authors: "11"
-  journal: "arXiv preprint"
+  journal: "arXiv:2512.16981"
   year: 2025
   month: 12
   topics: ["High-redshift AGN"]
@@ -218,7 +220,7 @@
   journal: "A&A"
   year: 2025
   month: 12
-  topics: ["Other", "Obscured AGN"]
+  topics: ["Other", "Obscuration and outflows"]
   ads: https://ui.adsabs.harvard.edu/abs/2025A&A...704A.146G
   arxiv: https://arxiv.org/abs/2512.08448
   doi: https://doi.org/10.1051/0004-6361/202557189
@@ -241,7 +243,7 @@
   authors: ["Koss, M.", "Aftab, N.", "Allen, S. W.", "…", "Signorini, M."]
   et_al: true
   n_authors: "200+"
-  journal: "arXiv preprint"
+  journal: "arXiv:2511.00253"
   year: 2025
   month: 10
   topics: ["Other"]
@@ -295,7 +297,7 @@
   journal: "ApJ"
   year: 2025
   month: 9
-  topics: ["BASS collaboration", "Obscured AGN"]
+  topics: ["BASS collaboration", "Obscuration and outflows"]
   ads: https://ui.adsabs.harvard.edu/abs/2025ApJ...990....3P
   arxiv: https://arxiv.org/abs/2507.10674
   doi: https://doi.org/10.3847/1538-4357/adec9a
@@ -319,7 +321,7 @@
   journal: "A&A"
   year: 2025
   month: 5
-  topics: ["Other", "Obscured AGN"]
+  topics: ["Other", "Obscuration and outflows"]
   ads: https://ui.adsabs.harvard.edu/abs/2025A&A...697A.223T
   arxiv: https://arxiv.org/abs/2410.10941
   doi: https://doi.org/10.1051/0004-6361/202452609
@@ -332,7 +334,7 @@
   journal: "MNRAS"
   year: 2025
   month: 4
-  topics: ["Obscured AGN", "High-redshift AGN"]
+  topics: ["Obscuration and outflows", "High-redshift AGN"]
   ads: https://ui.adsabs.harvard.edu/abs/2025MNRAS.538.1921M
   arxiv: https://arxiv.org/abs/2405.00504
   doi: https://doi.org/10.1093/mnras/staf359
@@ -345,7 +347,7 @@
   journal: "ApJ"
   year: 2024
   month: 10
-  topics: ["STORM2 collaboration", "Obscured AGN"]
+  topics: ["STORM2 collaboration", "Obscuration and outflows"]
   ads: https://ui.adsabs.harvard.edu/abs/2024ApJ...974...91Z
   arxiv: https://arxiv.org/abs/2406.17061
   doi: https://doi.org/10.3847/1538-4357/ad6771
@@ -444,7 +446,7 @@
   journal: "A&A"
   year: 2023
   month: 8
-  topics: ["Obscured AGN"]
+  topics: ["Obscuration and outflows"]
   ads: https://ui.adsabs.harvard.edu/abs/2023A&A...676A..49S
   arxiv: https://arxiv.org/abs/2305.13368
   doi: https://doi.org/10.1051/0004-6361/202346364

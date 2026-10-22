@@ -37,20 +37,24 @@ interests:
   - topic: Cosmology with AGN
     color: blue
     text: >-
-      Using the relation between the UV and X-ray luminosities of quasars
-      to measure distances out to high redshift and test cosmological
-      models.
-  - topic: Obscured AGN
+      Measuring distances with AGN using different methods (the
+      L<sub>X</sub>–L<sub>UV</sub> relation, X-ray variability and the size of
+      the Broad Line Region), and testing cosmological models together with
+      other probes.
+  - topic: Obscuration and outflows
     color: green
     text: >-
-      How the obscured AGN population evolves over cosmic time, how X-ray
-      observations can find and characterise it, and what it means for the
-      co-evolution of black holes and their host galaxies.
+      How much of the AGN population is hidden behind gas and dust, and how
+      this changes over cosmic time, using deep X-ray surveys such as the
+      Chandra J1030 field. With XRISM, I also study the gas close to the black
+      hole in detail, through iron-line diagnostics and ionised outflows in
+      NGC&nbsp;3783.
   - topic: High-redshift AGN
     color: sky
     text: >-
-      The most distant quasars, and what they reveal about how
-      supermassive black holes formed and grew in the early Universe.
+      The most distant quasars, including the ones discovered by JWST, and
+      what they reveal about how supermassive black holes formed and grew in
+      the early Universe.
   - topic: BASS collaboration
     color: orange
     text: >-

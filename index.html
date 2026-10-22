@@ -76,7 +76,8 @@ layout: default
         <li class="pub" data-year="{{ pub.year }}" data-month="{{ pub.month | default: 0 }}" data-first="{{ first }}" data-topics="{{ pub.topics | join: '|' }}">
           <span class="pub-year">{{ pub.year }}</span>
           <div class="pub-body">
-            <p class="pub-title">{% if pub.ads %}<a href="{{ pub.ads }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</p>
+            <p class="pub-title">{%- assign t = pub.title | replace: "X-ray", '<span class="nowrap">X-ray</span>' -%}
+              {% if pub.ads %}<a href="{{ pub.ads }}">{{ t }}</a>{% else %}{{ t }}{% endif %}</p>
             <p class="pub-authors">
               {%- for a in pub.authors -%}
                 {%- if a == site.me %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}{% if a == "…" %} {% else %}; {% endif %}{% endunless -%}
@@ -85,7 +86,7 @@ layout: default
               {%- if pub.n_authors %} <span class="n-authors">({{ pub.n_authors }} authors)</span>{% endif -%}
             </p>
             <p class="pub-meta">
-              <span class="journal">{{ pub.journal }}</span>
+              {% if pub.status %}<span class="status">{{ pub.status }}</span> · {% endif %}<span class="journal">{{ pub.journal }}</span>
               {%- for t in pub.topics %}
                 {%- assign col = "ink" -%}
                 {%- for i in p.interests %}{% if i.topic == t %}{% assign col = i.color %}{% endif %}{% endfor %}
