@@ -64,12 +64,20 @@ interests:
       Line Region and the black hole mass.
 
 # ---- CV ----
-cv_file: /files/cv.pdf
+# To update: replace the PDF in /files with the new one (same file name)
+# and change the date below.
+cv_file: /files/CV_Matilde_Signorini.pdf
 cv_updated: October 2026
 
 # ---- Contact ----
-email: name@university.edu
+# The email is split in two so it never appears whole in the page source;
+# the page puts it back together for visitors, which keeps most spam
+# bots from collecting it.
+email_user: matilde.signorini
+email_domain: esa.int
 address: |
-  Department, Room 000
-  University name
-  Street 1, 0000 AB City
+  Office Ag203
+  ESA-ESTEC
+  Keplerlaan 1
+  2201 AZ Noordwijk
+  The Netherlands

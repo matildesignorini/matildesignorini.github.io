@@ -104,7 +104,6 @@ layout: default
   <section id="cv" class="cv">
     <h2>Curriculum vitae</h2>
     <div class="cv-row">
-      <p>The full CV, with education, positions, grants and service.</p>
       <a class="button" href="{{ p.cv_file | relative_url }}" download>Download CV <span class="small">PDF · {{ p.cv_updated }}</span></a>
     </div>
   </section>
@@ -137,10 +136,10 @@ layout: default
     <ul class="entries">
       {%- for o in site.data.outreach %}
       <li>
-        <time datetime="{{ o.date }}">{{ o.date | date: "%b %Y" }}</time>
+        <time datetime="{{ o.year }}">{{ o.year }}</time>
         <div>
-          <p class="entry-title">{{ o.title }}</p>
-          {%- if o.where %}<p class="entry-meta">{{ o.where }}</p>{% endif %}
+          <p class="entry-title"{% if o.lang %} lang="{{ o.lang }}"{% endif %}>{{ o.title }}</p>
+          {%- if o.kind or o.where %}<p class="entry-meta">{{ o.kind }}{% if o.kind and o.where %} · {% endif %}{{ o.where }}</p>{% endif %}
           {%- if o.text %}<div class="entry-text">{{ o.text | markdownify }}</div>{% endif %}
           {%- if o.links %}
           <p class="entry-links">
@@ -157,7 +156,9 @@ layout: default
   <section id="contact" class="contact">
     <h2>Contact</h2>
     <div class="contact-grid">
-      <p><a class="email" href="mailto:{{ p.email }}">{{ p.email }}</a></p>
+      <p class="email-wrap">
+        <a class="email" data-user="{{ p.email_user }}" data-domain="{{ p.email_domain }}">{{ p.email_user }} [at] {{ p.email_domain }}</a>
+      </p>
       <address>{{ p.address | newline_to_br }}</address>
     </div>
   </section>

@@ -1,13 +1,36 @@
 # Outreach activities, newest first.
-#   links: any number of buttons, each with a label and a url
+#   year:   the year shown on the left
+#   title:  main line
+#   kind:   what it was (shown in grey under the title, with "where")
+#   lang:   "it" if the title is in Italian (helps screen readers and search)
+#   links:  any number of buttons, each with a label and a url
 
-- title: Title of your outreach talk
-  date: 2026-02-10
-  where: Venue, City
-  text: >-
-    One or two sentences about the talk and who it was for.
+- year: 2025
+  kind: Public talk
+  title: "Galassie e Materia Oscura: un Universo in Tensione"
+  lang: it
+  where: Cosmoverse@Naples
   links:
     - label: Watch on YouTube
-      url: https://www.youtube.com/
-    - label: Teaching the Universe material
-      url: https://example.org/
+      url: https://www.youtube.com/watch?v=pZf-8uJD4GM&t=2959s
+
+- year: 2025
+  kind: Volunteer
+  title: ESA Open Day
+
+- year: 2024
+  kind: Article
+  title: "Studiare l’espansione dell’Universo attraverso i nuclei galattici attivi"
+  lang: it
+  where: Giornale di Astronomia
+  links:
+    - label: Read the article
+      url: https://www.torrossa.com/it/resources/an/5882094
+
+- year: 2024
+  kind: Translator and editor
+  title: Teaching the Universe, Italian edition
+  where: CosmoVerse teaching materials on cosmology and cosmological tensions for high school students
+  links:
+    - label: Teaching the Universe materials
+      url: https://cosmoversetensions.eu/for-the-public/teaching-the-universe/

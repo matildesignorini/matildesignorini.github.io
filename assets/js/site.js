@@ -1,3 +1,12 @@
+// Email: assembled here so the full address isn't in the page source.
+(function () {
+  document.querySelectorAll("a.email[data-user]").forEach(function (a) {
+    var addr = a.dataset.user + "@" + a.dataset.domain;
+    a.href = "mailto:" + addr;
+    a.textContent = addr;
+  });
+})();
+
 // Publications: filter by authorship, sort by date or group by topic.
 (function () {
   var box = document.querySelector(".pubs");
