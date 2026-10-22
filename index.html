@@ -68,7 +68,7 @@ layout: default
 
     {%- assign pubs = site.data.publications | sort: "year" | reverse %}
     {%- comment %} The script re-sorts by year and month and adds the toggles. {% endcomment %}
-    <div class="pub-box">
+    <div class="pub-box scroll-box">
       <ol class="pubs">
         {%- for pub in pubs %}
         {%- assign first = false -%}
@@ -115,23 +115,25 @@ layout: default
   <!-- ===================== TALKS ===================== -->
   <section id="talks">
     <h2>Invited talks</h2>
-    <ul class="entries">
-      {%- for t in site.data.talks %}
-      <li>
-        <time datetime="{{ t.year }}">{{ t.year }}</time>
-        <div>
-          <p class="entry-title">{{ t.title }}</p>
-          <p class="entry-meta">{{ t.event }}{% if t.place %}, {{ t.place }}{% endif %}</p>
+    <div class="scroll-box">
+      <ul class="entries compact">
+        {%- for t in site.data.talks %}
+        <li>
+          <time datetime="{{ t.year }}">{{ t.year }}</time>
+          <div>
+            <p class="entry-title">{{ t.title }}</p>
+            <p class="entry-meta">{{ t.event }}{% if t.place %}, {{ t.place }}{% endif %}</p>
+          </div>
           {%- if t.slides or t.recording %}
           <p class="entry-links">
-            {%- if t.slides %}<a class="slides" href="{{ t.slides | relative_url }}">Slides</a>{% endif %}
-            {%- if t.recording %}<a class="video" href="{{ t.recording }}">Recording</a>{% endif %}
+            {%- if t.slides %}<a class="slides" href="{{ t.slides | relative_url }}" aria-label="Slides: {{ t.title | strip_html }}">Slides</a>{% endif %}
+            {%- if t.recording %}<a class="video" href="{{ t.recording }}" aria-label="Recording: {{ t.title | strip_html }}">Recording</a>{% endif %}
           </p>
           {%- endif %}
-        </div>
-      </li>
-      {%- endfor %}
-    </ul>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
   </section>
 
   <!-- ===================== OUTREACH ===================== -->

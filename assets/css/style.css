@@ -155,13 +155,15 @@ body::before {
 .seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
 .pub-count { font: 500 .85rem var(--font); color: var(--muted); margin-left: auto; font-variant-numeric: tabular-nums; }
 
-.pub-box {
-  max-height: 31rem; overflow-y: auto;
+.scroll-box {
+  overflow-y: auto;
   background: var(--box);
   border: 1.5px solid var(--ink);
   padding: 0 1.1rem;
   scrollbar-color: var(--muted) transparent;
 }
+.pub-box { max-height: 31rem; }
+#talks .scroll-box { max-height: 26rem; }
 .pubs { list-style: none; margin: 0; padding: 0; }
 .pub { display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: .8rem; padding: 1rem 0; border-bottom: 1px solid var(--rule); }
 .pub:last-child { border-bottom: 0; }
@@ -215,6 +217,15 @@ body::before {
 .entry-links a.slides:hover { background: var(--yellow); color: var(--on-fill); }
 .entry-links a.video:hover  { background: var(--sky); color: var(--on-fill); }
 @media (max-width: 520px) { .entries li { grid-template-columns: minmax(0, 1fr); gap: .2rem; } }
+
+/* talks: one compact row each, buttons on the right */
+.entries.compact li { grid-template-columns: 3rem minmax(0, 1fr) auto; gap: .9rem; padding: .8rem 0; align-items: start; }
+.entries.compact .entry-meta { margin-bottom: 0; font-size: .93rem; }
+.entries.compact .entry-links { margin: 0; flex-wrap: nowrap; padding-top: .1rem; }
+@media (max-width: 520px) {
+  .entries.compact li { grid-template-columns: 2.8rem minmax(0, 1fr); gap: .2rem .7rem; }
+  .entries.compact .entry-links { grid-column: 2; margin-top: .4rem; }
+}
 
 /* ========================= contact & footer ========================= */
 .contact-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem 2rem; }
