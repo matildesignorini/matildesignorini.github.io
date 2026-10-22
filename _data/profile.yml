@@ -6,11 +6,16 @@ photo: /images/profile.jpg
 
 # Short bio. Markdown works: *italics*, **bold**, [links](https://...)
 # Leave an empty line between paragraphs.
-bio: >-
+bio: |
   I'm an observational astronomer studying active galactic nuclei (AGN).
   My work is centred on X-rays, and I also analyse UV and infrared data.
   I want to understand how AGN work: in particular, the interplay between
   the accretion disc and the X-ray emitting corona.
+
+  **Looking for a Master's thesis on AGN?** I have several projects
+  available, with the possibility of joining me as a visiting student at
+  ESA-ESTEC. [Get in touch](#contact) and we can discuss the details.
+  {: .callout}
 
 links:
   - label: Google Scholar

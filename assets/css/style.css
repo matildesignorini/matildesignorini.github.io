@@ -224,3 +224,11 @@ address { font-style: normal; color: var(--muted); }
 .nowrap { white-space: nowrap; }
 .n-authors { white-space: nowrap; }
 .pub-meta .status { font-weight: 600; color: var(--yellow); }
+
+/* the "Master's thesis" note in the bio */
+.bio .callout {
+  border-left: 3px solid var(--yellow);
+  padding: .5rem 0 .5rem .9rem;
+  background: color-mix(in srgb, var(--yellow) 8%, transparent);
+}
+.bio .callout strong { color: var(--yellow); }
