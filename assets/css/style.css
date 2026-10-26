@@ -243,3 +243,6 @@ address { font-style: normal; color: var(--muted); }
   background: color-mix(in srgb, var(--yellow) 8%, transparent);
 }
 .bio .callout strong { color: var(--yellow); }
+
+/* hidden things stay hidden (e.g. papers filtered out in the publications box) */
+[hidden] { display: none !important; }
