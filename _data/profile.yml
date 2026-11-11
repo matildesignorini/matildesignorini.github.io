@@ -7,10 +7,12 @@ photo: /images/profile.jpg
 # Short bio. Markdown works: *italics*, **bold**, [links](https://...)
 # Leave an empty line between paragraphs.
 bio: |
-  I'm an observational astronomer studying active galactic nuclei (AGN).
-  My work is centred on X-rays, and I also analyse UV and infrared data.
-  I want to understand how AGN work: in particular, the interplay between
-  the accretion disc and the X-ray emitting corona.
+  I'm an observational astronomer at ESA studying active galactic nuclei
+  (AGN), the growing supermassive black holes at the centres of galaxies.
+  I work mainly with X-ray data, together with UV and infrared, to
+  understand how the accretion disc and the hot corona around the black
+  hole interact, and how AGN can be used to measure distances across the
+  Universe.
 
   **Looking for a thesis on AGN?** I have several projects
   available, with the possibility of joining me as a visiting student at
@@ -50,10 +52,9 @@ interests:
     color: green
     text: >-
       How much of the AGN population is hidden behind gas and dust, and how
-      this changes over cosmic time, using deep X-ray surveys such as the
-      Chandra J1030 field. With XRISM, I also study the gas close to the black
-      hole in detail, through iron-line diagnostics and ionised outflows in
-      NGC&nbsp;3783.
+      this changes over cosmic time, using deep X-ray observations. With
+      XRISM, I am also involved in studying the gas close to the black hole
+      in detail, through iron-line diagnostics and ionised outflows.
   - topic: High-redshift AGN
     color: sky
     text: >-
@@ -69,8 +70,8 @@ interests:
     color: ochre
     text: >-
       Member of AGN STORM 2, an intensive multiwavelength reverberation
-      mapping campaign on the Seyfert galaxy Mrk 817, probing the Broad
-      Line Region and the black hole mass.
+      mapping campaign on the Seyfert galaxy Mrk&nbsp;817, studying the
+      object's variability, obscuration, and the central black hole.
 
 # ---- CV ----
 # To update: replace the PDF in /files with the new one (same file name)
